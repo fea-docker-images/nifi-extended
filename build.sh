@@ -1,0 +1,1 @@
+docker build -t fea17e86/nifi-extended:latest .

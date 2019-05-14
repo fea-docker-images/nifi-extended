@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+
+  nifi:
+    image: fea17e86/nifi-extended
+    volumes:
+      - ./jdbc:/var/nifi/jdbc
+    ports:
+      - "10004:8080"
