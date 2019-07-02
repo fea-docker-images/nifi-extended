@@ -1,10 +1,10 @@
 # fea17e86/nifi-extended
 
-This image extends [apache/nifi](https://hub.docker.com/r/apache/nifi) by a new volume `JDBC_DRIVERS` located in `var/nifi/jdbc`. How to use it:
+This image extends [apache/nifi](https://hub.docker.com/r/apache/nifi) by a new volume `JDBC_DRIVERS` located in `/var/nifi/jdbc`. How to use it:
 
 ## Example configuration for MSSQL Server
 
-1. Run this image (example: [docker-compose.yml](./docker-compose.yml)) and mount `var/nifi/jdbc` to a folder on your host system that contains the jdbc drivers
+1. Run this image (example: [docker-compose.yml](./docker-compose.yml)) and mount `/var/nifi/jdbc` to a folder on your host system that contains the jdbc drivers
 2. Go to the nifi web administration
 3. Right click on the canvas and select `Configure`
 4. Add a new controller service and select type `DBConnectionPool`
