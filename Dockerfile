@@ -1,5 +1,5 @@
 FROM apache/nifi:latest
 
-ENV JDBC_DRIVERS /var/nifi/jdbc
+ENV NIFI_TRANSFER /var/nifi
 
-VOLUME ${JDBC_DRIVERS}
+VOLUME ${NIFI_TRANSFER}
